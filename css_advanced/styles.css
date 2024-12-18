@@ -19,7 +19,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, header {
-	font-family: sans-serif;
+	font-family:  "Source Sans 3", sans-serif;
 }
 
 body {
@@ -28,6 +28,7 @@ body {
     background-repeat: no-repeat;
     flex-direction: column;
     width: 100%;
+    color: white;
 
 }
 
@@ -62,10 +63,11 @@ header ul li {
 header a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none; /* Removes underline from links */
+    font-weight: bold;
 }
 
 header li a:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    color: #c271ff;
 }
 
 nav {
@@ -84,18 +86,20 @@ nav {
 
 .container h1 {
     font-size: 92px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     color: aliceblue;
+    font-weight: bold;
 }
 
 .tagline span {
-    margin: 0 10px;
-    font-size: 20px;
+    margin: 5px 30px;
+    font-size: 16px;
+    font-weight: bold;
     color: #ffffff;
 }
 
 .register-btn {
-     margin-top: 10px;
+     margin-top: 20px;
     padding: 20px 20px;
     background-color: #c271ff;
     color: white;
@@ -147,11 +151,13 @@ h2 {
     color: #ffffff;
     margin-top: 10px;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .profile-card p {
     font-size: 14px;
     color: #ffffff;
+    font-style: italic;
 }
 
 
@@ -160,11 +166,18 @@ h2 {
 /* Testimonial Section */
 .testimonial {
     display: flex;
-    justify-content: center;
-    padding: 60px;
-    background-color: #c271ff; 
-    background-size:cover;
-    color: #fff; 
+    box-sizing: border-box;
+    max-width: 1440px;
+    height: 392px;
+    background: #C271FF;
+    margin: 0 auto;
+    padding: 0 0 0 256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    text-align: left; 
 }
 
 /* Testimonial Image */
@@ -172,15 +185,12 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .testimonial-info{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 10px;
+    text-align: left;
+    width: 730px;
 
 }
 
@@ -190,28 +200,23 @@ h2 {
 
 /* Testimonial Text */
 .testimonial blockquote {
-    font-size: 18px;
-    font-style: italic;
-    color: #fff;
-    margin: 0 0 15px;
-    line-height: 1;
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 33.6px;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 
 
 
 
 /* Styling for the section */
 .popular-tutorials {
-    padding: 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-    border-radius: 8px;
+   text-align: center;
+    height: 625px;
+    background: #FFFFFF;
+    margin-top: 70px;
 }
 
 .popular-tutorials h2 {
@@ -220,9 +225,9 @@ q:before, q:after {
     margin-bottom: 20px;
 }
 
-/* .popular-tutorials span {
+.popular-tutorials span {
     color: #c271ff;
-} */
+}
 
 /* General Styling for All Stars */
 .fa-star {
@@ -237,7 +242,7 @@ q:before, q:after {
 /* Flexbox Layout for tutorial items */
 .tutorial-list {
     display: flex;
-    justify-content: space-between; /* Evenly space the tutorial items */
+    justify-content: center; /* Evenly space the tutorial items */
     gap: 20px;
     flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
 }
@@ -248,8 +253,8 @@ q:before, q:after {
     max-width: 300px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    
+    /* padding: 15px; */
     text-align: left;
 }
 
@@ -313,30 +318,32 @@ q:before, q:after {
 
 
 .membership {
-    padding: 50px;
-    background-color: #071629;
+    height: 502px;
+    background: #071629;
     text-align: center;
-    justify-content: space-around;
-
+    padding: 70px 140px;
+    
 }
 
 .membership h2 {
-    font-size: 24px;
-    color: #ffffff;
-    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 100px;
 }
 
 /* Grid Layout for Membership Items */
 .membership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr)); 
-    gap: 20px;
-    margin-top: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .membership-item {
+    width: 257px;
+    height: 153px;
     display: flex;
     flex-direction: column;
+     justify-content: center;
     align-items: center;
 }
 
@@ -353,48 +360,15 @@ q:before, q:after {
     border-radius: 8px;
 }
 
-.membership h2 {
-    font-size: 22px; /* Slightly smaller heading */
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.membership span {
+.membership h2 span{
+    font-size: 32px; /* Slightly smaller heading */
     color: #c271ff;
-}
-
-/* Grid Layout for Membership Items */
-.membership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Smaller item width */
-    gap: 15px; /* Reduced spacing between items */
     margin-bottom: 20px;
+    font-weight: 900;
 }
 
-/* Individual Membership Item */
-.membership-item {
-    padding: 10px; /* Reduced padding */
-    border-radius: 6px; /* Slightly smaller rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
 
-.membership-item img {
-    width: 50px; /* Smaller image */
-    margin-bottom: 8px; /* Reduced spacing below the image */
-}
 
-.membership-item h3 {
-    font-size: 16px; /* Smaller heading size */
-    color: #ffffff;
-    margin-bottom: 4px;
-}
-
-.membership-item p {
-    font-size: 12px; /* Smaller paragraph text */
-    color: #ffffff;
-    line-height: 1.4; /* Slightly tighter line spacing */
-}
 
 /* Button Styling */
 .register-button {
