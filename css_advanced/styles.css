@@ -57,10 +57,7 @@ header ul li {
     margin-right: 30px; /* Adds space between list items */
 }
 
-header img {
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto;
-}
+
 
 header a {
     color: rgba(255, 255, 255, 0.8);
@@ -69,6 +66,12 @@ header a {
 
 header li a:hover {
     text-decoration: underline; /* Adds underline on hover */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -157,7 +160,7 @@ h2 {
 /* Testimonial Section */
 .testimonial {
     display: flex;
-    text-align: center;
+    justify-content: center;
     padding: 60px;
     background-color: #c271ff; 
     background-size:cover;
@@ -176,6 +179,13 @@ h2 {
 .testimonial-info{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+
+}
+
+.testimonial-info h3 ,p {
+    margin: 0;
 }
 
 /* Testimonial Text */
@@ -492,7 +502,17 @@ footer p {
 	}
 }
 
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+}
 
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
 
 
 
