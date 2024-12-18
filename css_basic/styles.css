@@ -168,8 +168,9 @@ header .right {
 
 /* Header */
 header {
-	padding: 20px 0;
-	height: 80px;
+	display: flex;
+	align-items: center; /* Vertically aligns items in the header */
+    justify-content: space-between;
 }
 header ul {
 	list-style: none;
