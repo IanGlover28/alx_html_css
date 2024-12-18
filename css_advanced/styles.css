@@ -220,8 +220,18 @@ q:before, q:after {
     margin-bottom: 20px;
 }
 
-.popular-tutorials span {
+/* .popular-tutorials span {
     color: #c271ff;
+} */
+
+/* General Styling for All Stars */
+.fa-star {
+    color: #b3aeae; /* Default uncolored stars (gray) */
+}
+
+/* Make the first 4 stars colorful in every group */
+.tutorial-item .rating .fa-star:nth-child(-n+4) {
+    color: #c271ff; /* Gold color for the first 4 stars */
 }
 
 /* Flexbox Layout for tutorial items */
@@ -292,15 +302,12 @@ q:before, q:after {
     margin-bottom: 10px;
 }
 
-.rating i {
-    color: #c271ff; 
-}
 
 
-/* Duration styling */
-.duration {
-    font-size: 12px;
-    color: #c271ff;
+
+.tutorial-item .duration {
+    color: #c271ff; /* Purple color for the duration text */
+    font-weight: bold; /* Optional: Make it bold for emphasis */
     text-align: right;
 }
 
