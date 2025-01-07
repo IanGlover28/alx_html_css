@@ -1,0 +1,428 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #ff6565;
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.woff2') format('woff2'),
+         url('fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global styles */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: url('images/headphones_hero_1.jpg') ;
+    background-repeat: no-repeat;
+    
+    color: var(--text-color);
+}
+
+.cta-button {
+    font-family: 'Source Sans Pro', cursive;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hero Styles */
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 20px 0;
+	height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none; /* Removes the default list style */
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end; /* Aligns the list items to the right */
+}
+
+header ul li {
+    margin-right: 30px; /* Adds space between list items */
+}
+
+
+
+header a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold;
+}
+
+header li a:hover {
+    color: #FF6565;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-button {
+    display: none;
+    background: transparent; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+/* Initially hide the dropdown menu */
+.dropdown-menu {
+    display: none; /* Hide menu by default */
+    position: absolute; /* Position it absolutely */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+
+
+/* Styles for the dropdown menu */
+.dropdown-menu ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.dropdown-menu li {
+    padding: 10px; /* Padding for each item */
+}
+
+.dropdown-menu a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    display: block; /* Block display for full width */
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 100px;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    color:#ffffff;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    color:#ffffff;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e54d4d;
+    opacity: 0.9;
+}
+
+.cta-description {
+    font-size: 1rem; 
+    margin-top: 75px; 
+    color: #ffffff; 
+}
+
+.what-we-do {
+    text-align: center; /* Center align text in the section */
+    padding: 50px; /* Add padding for spacing */
+    margin-top: 150px;
+}
+
+.what-we-do h2 {
+    margin-bottom: 50px; /* Space below the section title */
+    font-weight: 500px;
+}
+
+.what-we-do p {
+    font-weight: 300px;
+    font-size: 16px;
+    max-width: 600px; /* Set a maximum width for the paragraph */
+    margin: 0 auto 30px; /* Center the paragraph and set bottom margin */
+    line-height: 1.5; /* Optional: improve readability */
+}
+
+.services {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 20px;
+    gap: 20px; /* Space between items */
+}
+
+.service {
+    flex: 1 1 calc(25% - 20px); /* Adjust for 4 items in a row with spacing */
+    max-width: calc(25% - 20px); /* Maximum width for each service card */
+    background-color: #fff; /* White background for each service */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    text-align: center; /* Center text within each service card */
+}
+
+.service span {
+    font-size: 70px; /* Icon size */
+    color: #FF6565;
+    display: block; /* Block display to center */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.service p {
+    margin-top: 20px;
+}
+
+.our-results {
+    text-align: center; /* Center align text in the section */
+    padding: 50px; /* Add padding for spacing */
+    margin-top: 80px;
+    background-image: url(images/headphones_hero_2.jpg);
+}
+
+.our-results h2 {
+    margin-bottom: 50px; /* Space below the section title */
+    font-weight:200px;
+    color:#ffffff;
+    font-size: 32px;
+}
+
+.our-results p {
+    font-weight: 100px;
+    font-size: 16px;
+    color:#ffffff ;
+    max-width: 600px; /* Set a maximum width for the paragraph */
+    margin: 0 auto 30px; /* Center the paragraph and set bottom margin */
+    line-height: 1.5; /* Optional: improve readability */
+}
+
+.results {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 30px;
+    gap: 40px; /* Space between items */
+}
+
+.result {
+    flex: 1 1 calc(25% - 30px); /* Adjust for 4 items in a row with spacing */
+    max-width: calc(25% - 30px); /* Maximum width for each result card */
+    background-image: url('images/pentagone.png'); /* Set background image */
+    background-size: cover; /* Ensure the background covers the entire div */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    color: white; /* Text color */
+    background-position: center;
+    background-size: 80%; /* Decrease the size of the background */
+    padding: 70px; /* Inner padding */
+    text-align: center; /* Center text within each result card */
+}
+
+
+.result h3 {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 10px 0 5px; /* Space around the heading */
+}
+
+.result p {
+    margin:0;
+}
+
+.contact-us {
+    padding: 80px; /* Add padding for spacing */
+    /* background-color: #f9f9f9; Light background for contrast */
+    text-align: center; /* Center align text */
+}
+
+.contact-us h2 {
+    margin-bottom: 20px; /* Space below the section title */
+    font-weight: 200px;
+}
+
+#contact-form {
+    max-width: 300px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form */
+    display: flex;
+    flex-direction: column; /* Stack the inputs vertically */
+    gap: 15px; /* Space between inputs */
+}
+
+.form-group {
+    position: relative; /* For positioning the underline */
+}
+
+input, textarea {
+    padding: 10px; /* Inner padding for inputs */
+    border: none; /* Remove border */
+    border-radius: 0; /* No rounded corners */
+    width: 100%; /* Full width */
+    outline: none; /* Remove default outline */
+    font-size: 16px; /* Font size for inputs */
+}
+
+input:focus, textarea:focus {
+    outline: none; /* Ensure no outline on focus */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Underline effect */
+.form-group::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* Height of the underline */
+    background-color: #979797; /* Underline color */
+    margin-top: 5px; /* Space between input and underline */
+}
+
+#contact-form button {
+    max-width: 100%;
+    align-self: center;
+    margin-top: 5px;
+    padding: 10px 20px; /* Inner padding for button */
+    background-color: #ff6b6b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#contact-form button:hover {
+    background-color: #ff3b3b; /* Darken button on hover */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service {
+        flex: 1 1 calc(50% - 20px); /* 2 items in a row on tablets */
+        max-width: calc(50% - 20px);
+    }
+
+    .result {
+        flex: 1 1 calc(50% - 20px); /* 2 items in a row on tablets */
+        max-width: calc(50% - 20px);
+    }
+    
+    #contact-form {
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .menu-button {
+        display: block; /* Show the menu button on small screens */
+    } 
+    
+    .dropdown-menu {
+        position: relative; /* Change position for mobile */
+        display: none; /* Keep it hidden by default */
+    }
+
+    /* Show dropdown when the button is clicked */
+    .menu-button:focus + .dropdown-menu,
+    .menu-button:active + .dropdown-menu {
+        display: block; /* Show menu on button focus or active state */
+    }
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background:transparent;
+        width: 100%; /* Full width */
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    header ul {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+    }
+
+    header ul li {
+        margin: 10px 0; /* Space between items */
+        text-align: center; /* Center align text */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size for mobile */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph size for mobile */
+    }
+
+    .service {
+        flex: 1 1 100%; /* 1 item in a row on mobile */
+        max-width: 100%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 20px;
+        margin-top: 150px;
+    }
+
+    .results {
+        gap: 15px; /* Reduce space between items on mobile */
+    }
+
+
+    .result {
+        flex: 1 1 100%; /* 1 item in a row on mobile */
+        max-width: 100%;
+        padding: 50px;
+    }
+}

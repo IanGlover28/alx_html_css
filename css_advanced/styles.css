@@ -1,0 +1,499 @@
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS reset rules */
+
+html, body {
+	height: 100%;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, header {
+	font-family:  "Source Sans 3", sans-serif;
+}
+
+body {
+    display: flex;
+    background-image: url(./images/Object.jpg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+
+}
+
+.main-part{
+    padding: 0;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 20px 0;
+	height: 80px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none; /* Removes the default list style */
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end; /* Aligns the list items to the right */
+}
+
+header ul li {
+    margin-right: 30px; /* Adds space between list items */
+}
+
+
+
+header a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold;
+}
+
+header li a:hover {
+    color: #c271ff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.container {
+    flex-direction: column;
+    padding: 170px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 92px;
+    margin-bottom: 5px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.tagline span {
+    margin: 5px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.register-btn {
+     margin-top: 20px;
+    padding: 20px 20px;
+    background-color: #c271ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 500px;
+    font-size: 16px;
+    box-shadow: 0px 5px 15px rgb(71, 71, 71);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    transform: scale(1.1) 3s;
+    background-color:  #c271ff;
+    box-shadow: 0px 5px 15px rgb(50, 50, 50);
+}
+
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.learn-from-pros span {
+    color: #c271ff;
+}
+
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.profile-card {
+    text-align: center;
+    margin: 0;
+    width: 200px;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.profile-card h3 {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+
+
+
+/* Testimonial Section */
+.testimonial {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1440px;
+    height: 392px;
+    background: #C271FF;
+    margin: 0 auto;
+    padding: 0 0 0 256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    text-align: left; 
+}
+
+/* Testimonial Image */
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.testimonial-info{
+    text-align: left;
+    width: 730px;
+
+}
+
+.testimonial-info h3 ,p {
+    margin: 0;
+}
+
+/* Testimonial Text */
+.testimonial blockquote {
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 33.6px;
+}
+
+
+
+
+
+
+/* Styling for the section */
+.popular-tutorials {
+   text-align: center;
+    height: 625px;
+    background: #FFFFFF;
+    margin-top: 70px;
+}
+
+.popular-tutorials h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.popular-tutorials span {
+    color: #c271ff;
+}
+
+/* General Styling for All Stars */
+.fa-star {
+    color: #b3aeae; /* Default uncolored stars (gray) */
+}
+
+/* Make the first 4 stars colorful in every group */
+.tutorial-item .rating .fa-star:nth-child(-n+4) {
+    color: #c271ff; /* Gold color for the first 4 stars */
+}
+
+/* Flexbox Layout for tutorial items */
+.tutorial-list {
+    display: flex;
+    justify-content: center; /* Evenly space the tutorial items */
+    gap: 20px;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on smaller screens */
+}
+
+/* Individual tutorial item */
+.tutorial-item {
+    flex: 1 1 calc(25% - 20px); /* Each item takes up 25% of the width with space between */
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+    /* padding: 15px; */
+    text-align: left;
+}
+
+/* Styling for the tutorial image */
+.tutorial-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Styling for tutorial title */
+.tutorial-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Styling for tutorial description */
+.tutorial-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Author information styling */
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author h4 {
+    font-size: 16px;
+    color: #c271ff;
+}
+
+/* Rating styling */
+.rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.tutorial-item .duration {
+    color: #c271ff; /* Purple color for the duration text */
+    font-weight: bold; /* Optional: Make it bold for emphasis */
+    text-align: right;
+}
+
+
+.membership {
+    height: 502px;
+    background: #071629;
+    text-align: center;
+    padding: 70px 140px;
+    
+}
+
+.membership h2 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 100px;
+}
+
+/* Grid Layout for Membership Items */
+.membership-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.membership-item {
+    width: 257px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+
+.membership-item h3, p {
+    color: #ffffff;
+    margin-bottom: 50px;
+} */
+
+/* Section Styling */
+.membership {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.membership h2 span{
+    font-size: 32px; /* Slightly smaller heading */
+    color: #c271ff;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+
+
+
+/* Button Styling */
+.register-button {
+    padding: 8px 16px; /* Smaller button size */
+    font-size: 14px; /* Reduced font size */
+   align-self: center;
+   background-color: #c271ff;
+   color: white;
+   border: none;
+   cursor: pointer;
+   border-radius: 500px;
+   font-size: 16px;
+   box-shadow: 0px 5px 15px rgb(71, 71, 71);
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #a150d8;
+}
+
+/* FAQ Section Styling */
+.faq {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* FAQ Container */
+.faq-container {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+.faq-item h3 {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+}
+
+.faq-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #071629; 
+    padding: 20px; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .section-items {
+    display: flex;
+    flex-direction: row;
+    gap: 650px; 
+}
+
+footer img {
+    width: 120px;
+    height: auto;
+}
+
+footer .section-items div {
+    display: flex; 
+    gap: 10px; 
+}
+
+footer i {
+    font-size: 20px; 
+    color: #ffffff; 
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: #c271ff;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #888;
+}
+
+
+
+
+@media (min-width: 1500px) {
+	body {
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2.5rem; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+}
+
+
+
