@@ -39,11 +39,12 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Source Sans Pro', sans-serif;
-    background: url('images/headphones_hero_1.jpg') ;
-    background-repeat: no-repeat;
- 
-    
+    background: url('images/headphones_hero_1.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire area */
     color: var(--text-color);
+    height: 100vh; /* Makes sure the body takes the full viewport height */
+    margin: 0; /* Removes default margin */
+
 }
 
 .cta-button {
